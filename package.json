@@ -4,15 +4,19 @@
   "version": "1.0.0",
   "author": "swyx <swyx@dontemail.me>",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.13.35",
+    "gatsby-plugin-manifest": "^2.2.47",
     "gatsby-plugin-offline": "^3.0.40",
     "gatsby-plugin-react-helmet": "^3.1.2",
+    "gatsby-plugin-styled-components": "^3.1.20",
     "netlify-lambda": "^1.6.0",
     "react": "^16.8.6",
     "react-async-script": "^0.9.1",
     "react-dom": "^16.8.6",
     "react-google-recaptcha": "^1.1.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "styled-components": "^5.0.1"
   },
   "devDependencies": {
     "dotenv": "^5.0.1"
