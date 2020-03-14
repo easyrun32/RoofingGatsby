@@ -2,5 +2,12 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Netlify Form Integration`
   },
-  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-offline`]
+  plugins: [
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/*`, `/contact/`]
+      }
+    }
+  ]
 };
