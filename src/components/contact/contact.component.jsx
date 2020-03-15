@@ -3,6 +3,7 @@ import React from "react";
 import { navigate } from "gatsby-link";
 //import { ContactContainer } from "./contact.styles";
 import "./contact.styles.scss";
+
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -102,6 +103,11 @@ export const ContactForm = () => {
               <option value="Roof Repair">Roof Repair</option>
               <option value="Roof Inspection">Roof Inspection</option>
             </select>
+          </div>
+          <div class="form__group">
+            <button class="submit submit--green" type="submit" value="send">
+              Submit
+            </button>
           </div>
         </form>
       </div>
