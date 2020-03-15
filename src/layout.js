@@ -1,53 +1,29 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import { Helmet } from 'react-helmet'
-
-import './css/typography.css'
-import './css/styles.css'
+import React from "react";
+import { Helmet } from "react-helmet";
+import "./css/globalstyles.css";
+import { HeaderMain } from "./components/header-main/header-main.component";
 
 export default function Template({ children }) {
   return (
     <div>
       <Helmet
-        title="Gatsby Default Starter"
-        meta={[{ name: 'description', content: 'Sample' }, { name: 'keywords', content: 'sample, something' }]}
+        title="Frank Stevens Roofing Inc"
+        meta={[
+          { name: `description`, content: `Sample` },
+          { name: `keywords`, content: `sample, something` }
+        ]}
       />
-      <div
-        style={{
-          background: `rebeccapurple`,
-          marginBottom: `1.45rem`,
-        }}
-      >
-        <div
-          style={{
-            margin: `0 auto`,
-            maxWidth: 960,
-            padding: `1.45rem 1.0875rem`,
-          }}
-        >
-          <h1 style={{ margin: 0 }}>
-            <Link
-              to="/"
-              style={{
-                color: 'white',
-                textDecoration: 'none',
-              }}
-            >
-              Gatsby + Netlify Forms
-            </Link>
-          </h1>
-        </div>
-      </div>
+      <HeaderMain />
       <div
         style={{
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0px 1.0875rem 1.45rem`,
-          paddingTop: 0,
+          paddingTop: 0
         }}
       >
         {children}
       </div>
     </div>
-  )
+  );
 }
