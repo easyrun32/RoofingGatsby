@@ -1,0 +1,267 @@
+$color-primary: rgba(40, 180, 157, 0.549);
+$color-primary-transparent: rgba(113, 219, 196, 0.103);
+$color-primary-light: #7ed56f;
+$color-primary-dark: rgba(33, 105, 91, 0.644);
+$color-top-menu: #dceeec8f;
+$color-top-menu-green: rgba(197, 235, 208, 0.726);
+$color-frank-title: #fff;
+$color-black: #0000;
+$color-white: white;
+$color-secondary-dark: #ff7730;
+
+$color-grey-dark: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+//GRID
+//60re,15re,10%
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;
+$color-grey-light-1: #e8ebe6;
+
+$default-font-size: 1vw;
+$items: 7;
+$animation-time: 4s;
+$transition-time: 0.6s;
+$scale: 20%;
+
+$total-time: ($animation-time * $items);
+$scale-base-1: (1 + $scale / 100%);
+
+.slideshow {
+  position: relative;
+  //width: 100vw;
+  height: 80vh;
+  overflow: hidden;
+  @media screen and (max-width: 800px) {
+    height: 100vh;
+  }
+}
+
+.slideshow-image {
+  position: absolute;
+  width: 100%; //100%
+  height: 100%; // 100%
+
+  background: no-repeat 50% 50%;
+  background-size: cover;
+  animation-name: kenburns;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: $total-time;
+  opacity: 1;
+  transform: scale($scale-base-1);
+
+  @for $i from 1 through $items {
+    &:nth-child(#{$i}) {
+      animation-name: kenburns-#{$i};
+      z-index: ($items - $i);
+    }
+  }
+}
+
+@for $i from 1 through $items {
+  @keyframes kenburns-#{$i} {
+    $animation-time-percent: percentage($animation-time / $total-time);
+    $transition-time-percent: percentage($transition-time / $total-time);
+
+    $t1: ($animation-time-percent * ($i - 1) - $transition-time-percent / 2);
+    $t2: ($animation-time-percent * ($i - 1) + $transition-time-percent / 2);
+    @if ($t1 < 0%) {
+      $t1: 0%;
+    }
+    @if ($t2 < 0%) {
+      $t2: 0%;
+    }
+
+    $t3: ($animation-time-percent * ($i) - $transition-time-percent / 2);
+    $t4: ($animation-time-percent * ($i) + $transition-time-percent / 2);
+    @if ($t3 > 100%) {
+      $t3: 100%;
+    }
+    @if ($t4 > 100%) {
+      $t4: 100%;
+    }
+
+    $t5: (100% - $transition-time-percent / 2);
+    $t6: (($t4 - $t1) * 100% / $t5);
+
+    #{$t1} {
+      opacity: 1;
+      transform: scale($scale-base-1);
+    }
+    #{$t2} {
+      opacity: 1;
+    }
+    #{$t3} {
+      opacity: 1;
+    }
+    #{$t4} {
+      opacity: 0;
+      transform: scale(1);
+    }
+
+    @if ($i != $items) {
+      100% {
+        opacity: 0;
+        transform: scale($scale-base-1);
+      }
+    }
+
+    @if ($i == 1) {
+      $scale-plus: ($scale * (100% - $t5) / $t4);
+      $scale-plus-base-1: (1 + ($scale + $scale-plus) / 100%);
+
+      #{$t5} {
+        opacity: 0;
+        transform: scale($scale-plus-base-1);
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+//TEXT
+h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 99;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  @media screen and (max-width: 800px) {
+    top: 60%;
+  }
+}
+
+.heading-primary {
+  /*Frank steven and sons served over 50 years*/
+
+  color: $color-frank-title;
+  text-transform: uppercase;
+  /*important to stop the shaky ness! */
+  backface-visibility: hidden;
+  margin-bottom: 3rem;
+  text-align: center;
+  margin-left: -0.5vw;
+  @media screen and (max-width: 800px) {
+    //margin-left: 1rem;
+    text-align: center;
+    margin-top: -5rem;
+  }
+
+  /*Frank Steven and Sons Roofing text*/
+  &--main {
+    display: block;
+    font-size: 3vw;
+    font-weight: 400;
+    letter-spacing: 0.4rem;
+    animation-name: moveInLeft;
+    animation-duration: 900ms;
+    animation-timing-function: ease-out;
+    -o-transition-duration: 200ms;
+
+    @media screen and (max-width: 800px) {
+      letter-spacing: 0.5rem;
+      -o-transition-duration: 700ms;
+      font-size: 5.5vw;
+      font-weight: 700vw;
+    }
+  }
+  /*Serving over 50 years text */
+  &--sub {
+    display: block;
+    font-size: 1.5vw;
+    font-weight: 380;
+    letter-spacing: 0.1rem;
+
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+
+    @media screen and (max-width: 800px) {
+      letter-spacing: 0.1rem;
+      font-size: 3vw;
+      font-weight: 400;
+    }
+  }
+  &--phone {
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+}
+
+.slideshow-section-circle {
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+  position: absolute;
+  display: flex;
+  top: 80%;
+  left: 0%;
+  width: 100%;
+  height: 100px;
+  /* transform: translate3d(-50%, -50%, 0); */
+  z-index: 99;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  &__1 {
+    grid-area: 1 / 2 / 2 / 4;
+  }
+  &__2 {
+    //margin-left: 7vw;
+    grid-area: 1 / 5 / 2 / 8;
+  }
+  &__3 {
+    grid-area: 1 / 9 / 2 / 11;
+  }
+}
+.circle {
+  display: block;
+  height: 100px;
+  width: 100px;
+  background-image: linear-gradient(
+    -50deg,
+    #b5d6d1 0%,
+    rgba(211, 243, 211, 0.801) 100%
+  );
+  text-align: center;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: inline-block;
+  align-content: center;
+  align-items: center;
+  &__text {
+    color: white;
+    margin-top: 20px;
+    &__sub {
+      color: white;
+      font-size: 0.9vw;
+    }
+  }
+
+  &__image {
+    height: 60px;
+    // max-height: 100%;
+    // max-width: 100%;
+    -webkit-filter: invert(100%); /* Safari/Chrome */
+    filter: invert(100%);
+    position: relative;
+    top: 20%;
+  }
+}

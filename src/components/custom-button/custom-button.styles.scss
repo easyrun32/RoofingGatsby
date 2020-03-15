@@ -1,0 +1,90 @@
+$color-def: rgb(0, 0, 0);
+$color-inv: rgb(77, 75, 75);
+.container {
+  text-decoration: none;
+  margin: auto;
+  width: 17vw;
+  height: 5vh;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn {
+  width: 17vw;
+
+  padding: 5% 1.2%;
+  padding-right: 2%;
+  margin-bottom: 25px;
+  font-size: 1.1vw;
+  font-weight: 600;
+  letter-spacing: 0.2vw;
+  text-transform: uppercase;
+
+  color: $color-inv;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  user-select: none;
+  &,
+  &:link,
+  &:visited {
+    position: relative;
+    /*back up 0.77, 0, 0.2, .4  for cubic-bezier*/
+    /* x1,y1,x2,y2 or startx,starty,endx,end */
+    transition: 600ms cubic-bezier(0.1, 0, 0.1, 0);
+    /*All these & symbols were outside of btn but with .btn instead of &  */
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      transition: inherit;
+      z-index: -1;
+    }
+    /*
+        this may seem confusing but it's quite simple
+        within the hover imagine if & had hover
+        and so that's what it really is example below
+      */
+    &:hover {
+      color: $color-def;
+      transition-delay: 0.6s;
+      &:before {
+        /* hover:before (example) */
+        transition-delay: 0s;
+      }
+      &:after {
+        background: $color-inv;
+        transition-delay: 0.4s;
+      }
+    }
+  }
+}
+/* From Middle */
+.from-middle {
+  &:before {
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 0;
+    border: 1px solid $color-inv;
+    border-left: 0;
+    border-right: 0;
+  }
+  &:after {
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 0%;
+    background: $color-inv;
+  }
+  &:hover {
+    &:before {
+      left: 0;
+      width: 100%;
+    }
+    &:after {
+      top: 0;
+      height: 103%;
+    }
+  }
+}
+/* end of button */
