@@ -1,10 +1,106 @@
-.contact_container {
-  position: relative;
-
-  height: 50vh;
+$color-white: white;
+$color-black: #0000;
+$color-primary: rgba(40, 180, 157, 0.549);
+.contactcontainer {
+  height: 200px;
+  background-size: cover;
   background-image: linear-gradient(
-    -50deg,
-    #dceeec8f 0%,
-    rgba(197, 235, 208, 0.726) 100%
-  );
+      100deg,
+      rgba(255, 255, 255, 0.8) 0%,
+      rgba(255, 255, 255, 0.5) 50%,
+      transparent 50%
+    ),
+    url(../../images/backgroundimage/ontheroof.jpg);
+
+  @media screen and (max-width: 800px) {
+    height: 70vh;
+
+    background-image: linear-gradient(
+        100deg,
+        rgba(255, 255, 255, 0.8) 0%,
+        rgba(255, 255, 255, 0.5) 100%,
+        transparent 50%
+      ),
+      url(../../images/backgroundimage/ontheroof.jpg);
+  }
+}
+.formcontainer {
+  width: 100%;
+  padding: 3vw;
+  padding-left: 8vw;
+  @media screen and (max-width: 800px) {
+    padding-left: 6vw;
+  }
+
+  //height: 200px;
+  text-align: center;
+}
+
+.form {
+  margin: auto;
+  //margin-left: 2rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  //background-color: rgba($color-white, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: inline-flex;
+
+  @media screen and (max-width: 800px) {
+    display: inline;
+  }
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 800px) {
+      position: relative;
+    }
+  }
+  &__input {
+    font-size: 1.8vw;
+    font-family: inherit;
+    padding: 0.2vw;
+    border-radius: 2px;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+    @media screen and (max-width: 800px) {
+      font-size: 16px;
+      margin: auto;
+      padding: 1vw;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+      border-bottom: 3px solid $color-primary;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid orangered;
+    }
+
+    &::-webkit-input-placeholder {
+      color: grey;
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  // &__input:placeholder-shown + &__label {
+  //   opacity: 0;
+  //   visibility: hidden;
+  //   transform: translateY(-4rem);
+  // }
 }

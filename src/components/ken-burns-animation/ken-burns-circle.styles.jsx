@@ -28,7 +28,6 @@ export const CircleContainer = styled(CircleContainerBase)`
   visibility: ${props => (props.show ? "visible" : "hidden")};
   transition: all 600ms ${props => (props.show ? "ease-in" : "ease-out")};
   transform: ${props => (props.show ? "none" : "translate(0, 100%)")};
-
   animation: fadeIn ease 4s;
   -webkit-animation: fadeIn ease 4s;
   -moz-animation: fadeIn ease 4s;

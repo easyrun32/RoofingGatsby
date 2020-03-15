@@ -20,7 +20,6 @@ export const KenCircles = () => {
     ({ prevPos, currPos }) => {
       const isShow = currPos.y < -30 || prevPos.y < -30;
       //const isShow = currPos.y < -20;
-      //console.log(isShow);
 
       if (isShow !== hideOnScroll) setHideOnScroll(isShow);
     },
@@ -29,31 +28,34 @@ export const KenCircles = () => {
     false,
     300
   );
-
   return (
-    <CircleContainer show={hideOnScroll}>
-      <CircleSectionOne>
-        <Circle>
-          <img src={trash} alt="trash" />
-        </Circle>
-        <CircleText>Roof Cleaning</CircleText>
-        <CircleTextSub>Moss & Debris Remove | Annual Maintenance</CircleTextSub>
-      </CircleSectionOne>
-      <CircleSectionTwo>
-        <Circle>
-          <img src={home} alt="home" />
-        </Circle>
-        <CircleText>Roof Replacment</CircleText>
-        <CircleTextSub>Full Roof Replacement & Cleanup</CircleTextSub>
-      </CircleSectionTwo>
-      <CircleSectionThree>
-        <Circle>
-          <img src={sketch} alt="sketch" />
-        </Circle>
-        <CircleText>Other Services</CircleText>
-        <CircleTextSub>Gutter | Skylights</CircleTextSub>
-      </CircleSectionThree>
-    </CircleContainer>
+    <div>
+      <CircleContainer show={hideOnScroll}>
+        <CircleSectionOne>
+          <Circle>
+            <img src={trash} alt="trash" />
+          </Circle>
+          <CircleText>Roof Cleaning</CircleText>
+          <CircleTextSub>
+            Moss & Debris Remove | Annual Maintenance
+          </CircleTextSub>
+        </CircleSectionOne>
+        <CircleSectionTwo>
+          <Circle>
+            <img src={home} alt="home" />
+          </Circle>
+          <CircleText>Roof Replacment</CircleText>
+          <CircleTextSub>Full Roof Replacement & Cleanup</CircleTextSub>
+        </CircleSectionTwo>
+        <CircleSectionThree>
+          <Circle>
+            <img src={sketch} alt="sketch" />
+          </Circle>
+          <CircleText>Other Services</CircleText>
+          <CircleTextSub>Gutter | Skylights</CircleTextSub>
+        </CircleSectionThree>
+      </CircleContainer>
+    </div>
   );
 };
 //  {/*
