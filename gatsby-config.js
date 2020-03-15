@@ -3,15 +3,6 @@ module.exports = {
     title: `Gatsby Netlify Form Integration`
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-styled-components`,
-    `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/*`]
-      }
-    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -48,6 +39,10 @@ module.exports = {
         // Any invalid keyword or empty string defaults to `anonymous`
         crossOrigin: `use-credentials`
       }
-    }
+    },
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-offline`
   ]
 };

@@ -104,7 +104,7 @@ export const ContactForm = () => {
               <option value="Roof Inspection">Roof Inspection</option>
             </select>
           </div>
-          <div class="form__group">
+          <div>
             <button class="submit submit--green" type="submit" value="send">
               Submit
             </button>
