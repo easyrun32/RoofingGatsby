@@ -35,7 +35,6 @@ export const PhotoSlider = () => {
       stars_amount: 3,
       socialmedia: gaf
     },
-
     {
       backgroundIcon: monroe,
       review:
@@ -46,7 +45,17 @@ export const PhotoSlider = () => {
       socialmedia: google
     }
   ];
-
+  /*
+   {
+      backgroundIcon: monroe,
+      review:
+        "wow this is a great company" +
+        "essssssslorem essssssslorem essssssslorem essssssslorem esssssss",
+      name: "Camerin",
+      stars_amount: 5,
+      socialmedia: google
+    }
+  */
   return (
     <SliderBackground>
       <SliderContainer>

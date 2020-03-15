@@ -105,7 +105,7 @@ export const ContactForm = () => {
             </select>
           </div>
           <div>
-            <button class="submit submit--green" type="submit" value="send">
+            <button className="submit submit--green" type="submit" value="send">
               Submit
             </button>
           </div>

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const SliderSquare = styled.div`
   /* border: solid 0.5px #555;*/
-
+  margin: auto;
   box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.055);
   -moz-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.082);
   -webkit-box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.082);
@@ -50,7 +50,7 @@ export const MidText = styled.div`
 export const TopText = styled.div`
   grid-area: 1 / 3 / 2 / 4;
   margin-top: -60px;
-  margin-left: 2vw;
+  margin-left: 1.5vw;
 `;
 export const SliderUserIcon = styled.div`
   position: relative;
