@@ -53,6 +53,7 @@ export const ContactForm = () => {
             </p>
             <div className="form__group">
               <input
+                id="name"
                 type="text"
                 className="form__input"
                 placeholder="Full name"
@@ -60,13 +61,14 @@ export const ContactForm = () => {
                 onChange={handleChange}
                 required
               />
-              <label for="name" hidden>
+              <label htmlFor="name" hidden>
                 Full name
               </label>
             </div>
             {/* type="email" name="email" onChange={handleChange} */}
             <div className="form__group">
               <input
+                id="email"
                 type="email"
                 className="form__input"
                 placeholder="Email"
@@ -74,13 +76,14 @@ export const ContactForm = () => {
                 onChange={handleChange}
                 required
               />
-              <label for="email" hidden>
+              <label htmlFor="email" hidden>
                 email
               </label>
             </div>
 
             <div className="form__group">
               <input
+                id="phone"
                 type="phone"
                 className="form__input"
                 placeholder="Phone"
@@ -88,25 +91,27 @@ export const ContactForm = () => {
                 onChange={handleChange}
                 required
               />
-              <label for="phone" hidden>
+              <label htmlFor="phone" hidden>
                 phone
               </label>
             </div>
             <div className="form__group">
               <input
                 type="text"
+                id="address"
                 className="form__input"
                 placeholder="Address"
                 name="address"
                 onChange={handleChange}
                 required
               />
-              <label for="address" hidden>
+              <label htmlFor="address" hidden>
                 address
               </label>
             </div>
             <div className="form__group">
               <select
+                id="service"
                 name="service"
                 className="form__input"
                 onBlur={handleChange}
@@ -116,7 +121,7 @@ export const ContactForm = () => {
                 <option value="Roof Repair">Roof Repair</option>
                 <option value="Roof Inspection">Roof Inspection</option>
               </select>
-              <label for="service" hidden>
+              <label htmlFor="service" hidden>
                 service
               </label>
             </div>
