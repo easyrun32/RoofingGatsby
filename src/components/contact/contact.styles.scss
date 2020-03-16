@@ -20,7 +20,7 @@ $color-grey-dark: #777;
     border: none;
     cursor: pointer;
     @media screen and (max-width: 800px) {
-      left: 15%;
+      //left: 15%;
       font-size: 2rem;
     }
   }
@@ -79,10 +79,10 @@ $color-grey-dark: #777;
 }
 
 .contactcontainer {
-  height: 200px;
+  height: 17vw;
   background-size: cover;
   background-image: linear-gradient(
-      100deg,
+      171deg,
       rgba(255, 255, 255, 0.8) 0%,
       rgba(255, 255, 255, 0.5) 50%,
       transparent 50%
@@ -90,7 +90,7 @@ $color-grey-dark: #777;
     url(../../images/backgroundimage/ontheroof.jpg);
 
   @media screen and (max-width: 800px) {
-    height: 70vh;
+    height: 500px;
 
     background-image: linear-gradient(
         100deg,
@@ -102,32 +102,42 @@ $color-grey-dark: #777;
   }
 }
 .formcontainer {
-  width: 100%;
-  padding: 3vw;
-  padding-left: 8vw;
-  @media screen and (max-width: 800px) {
-    padding-left: 6vw;
-  }
-
-  //height: 200px;
+  display: block;
   text-align: center;
+}
+.formsection1 {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 800px) {
+    display: inline;
+  }
+}
+.formsection2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.formbutton {
+  margin: auto;
+  @media screen and (max-width: 800px) {
+    margin-top: 50px;
+  }
 }
 
 .form {
-  margin: auto;
-  //margin-left: 2rem;
   font-size: 1.5rem;
   font-family: inherit;
-  padding: 1.5rem 2rem;
   border-radius: 2px;
-  //background-color: rgba($color-white, 0.5);
   border: none;
   border-bottom: 3px solid transparent;
-  width: 90%;
-  display: inline-flex;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5vw;
+  text-align: left;
 
   @media screen and (max-width: 800px) {
     display: inline;
+    padding: 1.5rem 2rem;
   }
   &__group:not(:last-child) {
     margin-bottom: 2rem;
