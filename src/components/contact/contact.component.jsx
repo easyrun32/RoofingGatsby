@@ -60,6 +60,9 @@ export const ContactForm = () => {
                 onChange={handleChange}
                 required
               />
+              <label for="name" hidden>
+                Full name
+              </label>
             </div>
             {/* type="email" name="email" onChange={handleChange} */}
             <div className="form__group">
@@ -71,6 +74,9 @@ export const ContactForm = () => {
                 onChange={handleChange}
                 required
               />
+              <label for="email" hidden>
+                email
+              </label>
             </div>
 
             <div className="form__group">
@@ -82,6 +88,9 @@ export const ContactForm = () => {
                 onChange={handleChange}
                 required
               />
+              <label for="phone" hidden>
+                phone
+              </label>
             </div>
             <div className="form__group">
               <input
@@ -92,6 +101,9 @@ export const ContactForm = () => {
                 onChange={handleChange}
                 required
               />
+              <label for="address" hidden>
+                address
+              </label>
             </div>
             <div className="form__group">
               <select
@@ -104,6 +116,9 @@ export const ContactForm = () => {
                 <option value="Roof Repair">Roof Repair</option>
                 <option value="Roof Inspection">Roof Inspection</option>
               </select>
+              <label for="service" hidden>
+                service
+              </label>
             </div>
           </div>
           <div className="formsection2">
