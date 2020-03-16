@@ -52,77 +52,70 @@ export const ContactForm = () => {
               </label>
             </p>
             <div className="form__group">
-              <input
-                id="name"
-                type="text"
-                className="form__input"
-                placeholder="Full name"
-                name="name"
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="name" hidden>
-                Full name
+              <label>
+                <input
+                  id="name"
+                  type="text"
+                  className="form__input"
+                  placeholder="Full name"
+                  name="name"
+                  onChange={handleChange}
+                  required
+                />
               </label>
             </div>
             {/* type="email" name="email" onChange={handleChange} */}
             <div className="form__group">
-              <input
-                id="email"
-                type="email"
-                className="form__input"
-                placeholder="Email"
-                name="email"
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="email" hidden>
-                email
+              <label>
+                <input
+                  id="email"
+                  type="email"
+                  className="form__input"
+                  placeholder="Email"
+                  name="email"
+                  onChange={handleChange}
+                  required
+                />
               </label>
             </div>
 
             <div className="form__group">
-              <input
-                id="phone"
-                type="phone"
-                className="form__input"
-                placeholder="Phone"
-                name="phone"
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="phone" hidden>
-                phone
+              <label>
+                <input
+                  type="phone"
+                  className="form__input"
+                  placeholder="Phone"
+                  name="phone"
+                  onChange={handleChange}
+                  required
+                />
               </label>
             </div>
             <div className="form__group">
-              <input
-                type="text"
-                id="address"
-                className="form__input"
-                placeholder="Address"
-                name="address"
-                onChange={handleChange}
-                required
-              />
-              <label htmlFor="address" hidden>
-                address
+              <label>
+                <input
+                  type="text"
+                  id="address"
+                  className="form__input"
+                  placeholder="Address"
+                  name="address"
+                  onChange={handleChange}
+                  required
+                />
               </label>
             </div>
             <div className="form__group">
-              <select
-                id="service"
-                name="service"
-                className="form__input"
-                onBlur={handleChange}
-              >
-                <option value="Service needed">Service needed</option>
-                <option value="Roof Replacement">Roof Replacement</option>
-                <option value="Roof Repair">Roof Repair</option>
-                <option value="Roof Inspection">Roof Inspection</option>
-              </select>
-              <label htmlFor="service" hidden>
-                service
+              <label>
+                <select
+                  name="service"
+                  className="form__input"
+                  onBlur={handleChange}
+                >
+                  <option value="Service needed">Service needed</option>
+                  <option value="Roof Replacement">Roof Replacement</option>
+                  <option value="Roof Repair">Roof Repair</option>
+                  <option value="Roof Inspection">Roof Inspection</option>
+                </select>
               </label>
             </div>
           </div>
