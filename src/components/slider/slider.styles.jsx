@@ -20,8 +20,10 @@ export const SliderTitle = styled.div`
   font-weight: 600;
   font-size: 2.5vw;
   @media screen and (max-width: 800px) {
-    font-size: 5vw;
+    font-size: 10vw;
     margin-top: 20px;
+
+    word-wrap: wrap;
   }
 `;
 

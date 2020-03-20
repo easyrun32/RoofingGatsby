@@ -42,7 +42,7 @@ export const TextTitle = styled.div`
   font-size: 3vw;
   font-weight: 600;
   @media screen and (max-width: 800px) {
-    font-size: 4vw;
+    font-size: 8vw;
   }
 `;
 export const Text = styled.div`

@@ -15,7 +15,7 @@ import schedule from "../../images/circle-images/schedule.png";
 import roofcolors from "../../images/circle-images/roofcolors.jpg";
 import roofer from "../../images/circle-images/roofer.jpg";
 import React from "react";
-import { useState, useEffect, useLayoutEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 // https://www.react-reveal.com/examples/
 
 function useWindowSize(defaultValue) {
