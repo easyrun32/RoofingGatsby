@@ -19,11 +19,15 @@ import { useState, useEffect } from "react";
 // https://www.react-reveal.com/examples/
 
 function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
-  return {
-    width,
-    height
-  };
+  if (typeof window !== "undefined") {
+    const { innerWidth: width, innerHeight: height } = window;
+    return {
+      width,
+      height
+    };
+  } else {
+    return null;
+  }
 }
 export const HomepageSection = () => {
   const [windowDimensions, setWindowDimensions] = useState(
