@@ -42,12 +42,12 @@ export const HomepageSection = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
+  const { width } = windowDimensions;
   return (
     <Background>
       <br />
       <TextTitle>THE FRANK STEVENS & SONS EXPERIENCE</TextTitle>
-      {windowDimensions.width < 800 ? (
+      {width < 800 ? (
         <Fade bottom>
           <Container>
             <CircleComponent image={schedule} />
