@@ -14,7 +14,9 @@ export default function Template({ children }) {
           { name: `keywords`, content: `sample, something` }
         ]}
       />
-      <html lang="en" />
+      {/* 
+        <html lang="en"></html>
+        */}
       <HeaderMain />
       <Header />
       <HeaderSub />

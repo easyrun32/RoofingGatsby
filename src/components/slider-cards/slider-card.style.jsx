@@ -15,6 +15,10 @@ export const SliderSquare = styled.div`
   width: 60vw;
   padding: 20px;
   height: 50vh;
+  @media screen and (max-width: 800px) {
+    height: 40vh;
+    width: 90vw;
+  }
   font-size: 23px;
 
   background-image: linear-gradient(
@@ -38,6 +42,9 @@ export const LeftText = styled.div`
 `;
 export const RightText = styled.div`
   grid-area: 6 / 5 / 7 / 6;
+  @media screen and (max-width: 600px) {
+    grid-area: 6 / 4 / 7 / 6;
+  }
   display: flex;
   img {
     width: 20px;
@@ -46,11 +53,17 @@ export const RightText = styled.div`
 `;
 export const MidText = styled.div`
   grid-area: 3 / 1 / 4 / 6;
+  @media screen and (max-width: 500px) {
+    font-size: 5vw;
+  }
 `;
 export const TopText = styled.div`
   grid-area: 1 / 3 / 2 / 4;
   margin-top: -60px;
   margin-left: 1.5vw;
+  @media screen and (max-width: 800px) {
+    margin-left: 5vw;
+  }
 `;
 export const SliderUserIcon = styled.div`
   position: relative;
@@ -59,8 +72,14 @@ export const SliderUserIcon = styled.div`
   object-fit: contain;
   border: 1px solid white;
   height: 100px;
+
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   width: 100px;
+  @media screen and (max-width: 800px) {
+    height: 90px;
+    width: 90px;
+    margin-left: -15px;
+  }
 `;

@@ -40,6 +40,12 @@ module.exports = {
         crossOrigin: `use-credentials`
       }
     },
+    {
+      resolve: "gatsby-plugin-html-attributes",
+      options: {
+        lang: "en"
+      }
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,

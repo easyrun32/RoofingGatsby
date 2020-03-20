@@ -23,11 +23,12 @@ export const CircleContainerBase = styled.div`
 `;
 
 export const CircleContainer = styled(CircleContainerBase)`
-  /*box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.65);*/
+  /* box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.65);*/
 
   visibility: ${props => (props.show ? "visible" : "hidden")};
   transition: all 600ms ${props => (props.show ? "ease-in" : "ease-out")};
   transform: ${props => (props.show ? "none" : "translate(0, 100%)")};
+
   animation: fadeIn ease 4s;
   -webkit-animation: fadeIn ease 4s;
   -moz-animation: fadeIn ease 4s;

@@ -34,6 +34,10 @@ export const ContactForm = () => {
   return (
     <div className="contactcontainer">
       <div className="formcontainer">
+        <br />
+        <div className="formtitle">
+          SUBMIT YOUR INFORMATION TO REQUEST A FREE BID!
+        </div>
         <form
           name="contact_frank"
           method="post"

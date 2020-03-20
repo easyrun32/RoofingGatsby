@@ -11,6 +11,7 @@ import {
 import trash from "../../images/circle-images/trash.svg";
 import home from "../../images/circle-images/home.svg";
 import sketch from "../../images/circle-images/sketch.svg";
+//import Fade from "react-reveal/Fade";
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 export const KenCircles = () => {
   const [hideOnScroll, setHideOnScroll] = useState(false);
@@ -28,6 +29,7 @@ export const KenCircles = () => {
     false,
     300
   );
+  //circlecontainer has
   return (
     <div>
       <CircleContainer show={hideOnScroll}>

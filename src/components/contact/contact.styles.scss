@@ -1,7 +1,7 @@
 $color-white: white;
 $color-black: #0000;
 $color-primary: rgba(40, 180, 157, 0.549);
-$default-font-size: 1vw;
+$default-font-size: 1.5vw;
 $color-grey-dark: #777;
 .submit {
   &,
@@ -9,9 +9,9 @@ $color-grey-dark: #777;
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 0.5vw;
+    padding: 0.5rem;
     display: inline-block;
-    border-radius: 0rem;
+    border-radius: 1rem;
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
@@ -21,7 +21,9 @@ $color-grey-dark: #777;
     cursor: pointer;
     @media screen and (max-width: 800px) {
       //left: 15%;
-      font-size: 2rem;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      padding: 1.5vw;
     }
   }
 
@@ -79,26 +81,34 @@ $color-grey-dark: #777;
 }
 
 .contactcontainer {
-  height: 17vw;
+  height: 50vh;
   background-size: cover;
+  /*transparent 50% */
   background-image: linear-gradient(
-      171deg,
-      rgba(255, 255, 255, 0.8) 0%,
-      rgba(255, 255, 255, 0.5) 50%,
-      transparent 50%
+      rgba(226, 243, 220, 0.8) 0%,
+      rgba(206, 252, 249, 0.5) 50%
     ),
     url(../../images/backgroundimage/ontheroof.jpg);
 
   @media screen and (max-width: 800px) {
-    height: 500px;
+    height: 550px;
 
     background-image: linear-gradient(
-        100deg,
-        rgba(255, 255, 255, 0.8) 0%,
-        rgba(255, 255, 255, 0.5) 100%,
-        transparent 50%
+        rgba(226, 243, 220, 0.8) 0%,
+        rgba(206, 252, 249, 0.5) 50%
       ),
       url(../../images/backgroundimage/ontheroof.jpg);
+  }
+}
+.formtitle {
+  font-size: 2vw;
+  color: white;
+  text-align: center;
+  margin-top: 5vh;
+  font-weight: 600;
+  @media screen and (max-width: 800px) {
+    font-size: 5vw;
+    margin-top: 1vh;
   }
 }
 .formcontainer {
