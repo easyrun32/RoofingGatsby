@@ -21,7 +21,7 @@ export const Grid = styled.div`
   grid-row-gap: 0px;
   @media screen and (max-width: 800px) {
     margin-top: 1vw;
-    display: block;
+    display: inline-block;
   }
 `;
 export const Left = styled.div`
