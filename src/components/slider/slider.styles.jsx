@@ -9,6 +9,9 @@ export const SliderBackground = styled.div`
     #bee9e48f 0%,
     rgba(242, 243, 242, 0.726) 100%
   );
+  @media screen and (max-width: 800px) {
+    height: 70vh;
+  }
 `;
 
 export const SliderTitle = styled.div`

@@ -20,6 +20,8 @@ export const Grid = styled.div`
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   @media screen and (max-width: 800px) {
+    margin-top: 1vw;
+    display: block;
   }
 `;
 export const Left = styled.div`
