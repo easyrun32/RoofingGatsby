@@ -7,7 +7,7 @@ import {
   TopText,
   SliderUserIcon
 } from "./slider-card.style";
-import star from "../../images/socialmedia/star.svg";
+import star from "../../images/socialmedia/star1.svg";
 export const SliderCard = ({
   backgroundIcon,
   review,

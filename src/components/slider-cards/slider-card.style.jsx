@@ -48,6 +48,7 @@ export const RightText = styled.div`
   display: flex;
   img {
     width: 20px;
+    height: 20px;
   }
   text-align: left;
 `;
