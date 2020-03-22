@@ -8,7 +8,8 @@ import "slick-carousel/slick/slick-theme.css";
 import {
   SliderBackground,
   SliderContainer,
-  SliderTitle
+  SliderTitle,
+  ContainerTitle
 } from "./slider.styles";
 
 import { SliderCard } from "../slider-cards/slider-card.component";
@@ -53,7 +54,9 @@ export const PhotoSlider = () => {
     <SliderBackground>
       <SliderContainer>
         <br />
-        <SliderTitle> REAL CUSTOMER REVIEWS</SliderTitle>
+        <SliderTitle>
+          <ContainerTitle>REAL CUSTOMER REVIEWS</ContainerTitle>
+        </SliderTitle>
 
         {/* Slider is not apart of styled components it's just a component from the library react-slick */}
         <Slider {...settings}>

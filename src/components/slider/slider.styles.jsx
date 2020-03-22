@@ -14,16 +14,22 @@ export const SliderBackground = styled.div`
   }
 `;
 
+export const ContainerTitle = styled.div`
+  /* width: 150px; */
+  @media screen and (max-width: 500px) {
+    margin: auto;
+    width: 70vw;
+  }
+`;
 export const SliderTitle = styled.div`
   text-align: center;
 
   font-weight: 600;
   font-size: 2.5vw;
   @media screen and (max-width: 500px) {
+    position: relative;
     font-size: 10vw;
     margin-top: 20px;
-
-    word-wrap: wrap;
   }
 `;
 

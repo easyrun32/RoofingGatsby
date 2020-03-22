@@ -30,12 +30,19 @@ function useWindowSize(defaultValue) {
 export const HomepageSection = () => {
   const windowSize = useWindowSize(900);
   console.log(windowSize.innerWidth);
+  /*
+container
+left 
+middle 
+right
+*/
   return (
     <Background>
       <br />
       <TextTitle>THE FRANK STEVENS & SONS EXPERIENCE</TextTitle>
       {windowSize.innerWidth < 800 ? (
         <Fade bottom>
+          {/* For big screen size*/}
           <Container>
             <CircleComponent image={schedule} />
             <h2>Schedule</h2>
@@ -58,6 +65,7 @@ export const HomepageSection = () => {
         </Fade>
       ) : (
         <Fade bottom>
+          {/*For big screen size */}
           <Grid>
             <Left>
               <Container>

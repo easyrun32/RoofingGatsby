@@ -36,6 +36,10 @@ export const Right = styled.div`
 export const Container = styled.div`
   margin-top: 10vw;
   margin-bottom: 10vw;
+  @media screen and (max-width: 500px) {
+    margin-top: 20vw;
+    margin-bottom: 20vw;
+  }
 `;
 
 export const TextTitle = styled.div`
