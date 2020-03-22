@@ -45,6 +45,7 @@ export const Container = styled.div`
 export const TextTitle = styled.div`
   font-size: 3vw;
   font-weight: 600;
+  margin-top: 10vw;
   @media screen and (max-width: 500px) {
     font-size: 8vw;
   }

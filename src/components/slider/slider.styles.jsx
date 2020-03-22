@@ -26,6 +26,7 @@ export const SliderTitle = styled.div`
 
   font-weight: 600;
   font-size: 2.5vw;
+  margin-top: 20px;
   @media screen and (max-width: 500px) {
     position: relative;
     font-size: 10vw;
