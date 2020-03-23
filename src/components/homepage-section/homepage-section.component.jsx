@@ -29,7 +29,7 @@ function useWindowSize(defaultValue) {
 }
 export const HomepageSection = () => {
   const windowSize = useWindowSize(900);
-  console.log(windowSize.innerWidth);
+
   /*
 container
 left 
