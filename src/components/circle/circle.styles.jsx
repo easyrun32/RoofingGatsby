@@ -13,6 +13,11 @@ export const Circle = styled.div`
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
 
+  @media screen and (min-width: 1400px) {
+    background-size: 200px 200px;
+    height: 200px;
+    width: 200px;
+  }
   @media screen and (max-width: 800px) {
     background-size: 150px 150px;
     height: 150px;

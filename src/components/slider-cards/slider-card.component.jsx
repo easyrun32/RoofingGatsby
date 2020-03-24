@@ -22,6 +22,15 @@ export const SliderCard = ({
 
   return (
     <SliderSquare>
+      <TopText>
+        <SliderUserIcon
+          style={{
+            marginLeft: "auto",
+            marginRight: "auto"
+          }}
+          background={backgroundIcon}
+        />
+      </TopText>
       <LeftText>
         {name}
         <br />
@@ -30,9 +39,6 @@ export const SliderCard = ({
 
       <RightText>{stars}</RightText>
       <MidText>{review}</MidText>
-      <TopText>
-        <SliderUserIcon background={backgroundIcon} />
-      </TopText>
     </SliderSquare>
   );
 };

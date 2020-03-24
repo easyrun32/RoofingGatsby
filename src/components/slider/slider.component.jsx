@@ -34,7 +34,7 @@ export const PhotoSlider = () => {
     {
       backgroundIcon: woodbury,
       review:
-        "lorem essssssslorem essssssslorem essssssslorem esssssssloremlorem essssssslorem ess",
+        "lorem essssssslorem lorem essssssslorem essssssslorem essssssslorem esssssssloremlorem essssssslorem essessssssslorem essssssslorem esssssssloremlorem essssssslorem ess",
       name: "bryan",
       stars_amount: 5,
       socialmedia: gaf

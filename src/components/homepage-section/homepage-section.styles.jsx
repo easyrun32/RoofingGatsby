@@ -11,28 +11,35 @@ export const Background = styled.div`
 
   text-align: center;
 `;
-export const Grid = styled.div`
-  margin-top: -6vw;
-  margin-bottom: -7vw;
-  display: grid;
-  grid-template-columns: 2fr repeat(5, 1fr) 2fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  @media screen and (max-width: 800px) {
-    margin-top: 1vw;
-    display: inline-block;
+
+export const SubTextContainer = styled.div`
+  text-align: center;
+  width: 20vw;
+  @media screen and (max-width: 500px) {
+    margin: auto;
+    width: 40vw;
   }
 `;
-export const Left = styled.div`
-  grid-area: 1 / 2 / 2 / 3;
+
+export const CirclePictureContainer = styled.div`
+  margin-top: 10vw;
+  margin-bottom: 10vw;
 `;
-export const Middle = styled.div`
-  grid-area: 1 / 4 / 2 / 5;
+
+export const CircleContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+
+  @media screen and (max-width: 500px) {
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
 `;
-export const Right = styled.div`
-  grid-area: 1 / 6 / 2 / 7;
-`;
+
 export const Container = styled.div`
   margin-top: 10vw;
   margin-bottom: 10vw;
