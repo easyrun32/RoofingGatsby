@@ -3,7 +3,7 @@ import React from "react";
 import { navigate } from "gatsby-link";
 //import { ContactContainer } from "./contact.styles";
 import "./contact.styles.scss";
-
+import { Button } from "../../components/button/button.component";
 function encode(data) {
   return Object.keys(data)
     .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
@@ -125,13 +125,9 @@ export const ContactForm = () => {
           </div>
           <div className="formsection2">
             <div className="formbutton">
-              <button
-                className="submit submit--green"
-                type="submit"
-                value="send"
-              >
+              <Button type="submit" value="send">
                 Submit
-              </button>
+              </Button>
             </div>
           </div>
         </form>

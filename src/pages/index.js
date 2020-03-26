@@ -5,6 +5,7 @@ import { PhotoSlider } from "../components/slider/slider.component";
 import { KenBurns } from "../components/ken-burns-animation/ken-burns.component";
 import { Questions } from "../components/homepage-common-question/questions.component";
 import { HomepageSection } from "../components/homepage-section/homepage-section.component";
+import { Cards } from "../components/cards/cards.component";
 export default function Index() {
   return (
     <Layout>
@@ -12,6 +13,8 @@ export default function Index() {
       <ContactForm />
       <PhotoSlider />
       <HomepageSection />
+      <Questions />
+      <Cards />
       <Questions />
     </Layout>
   );

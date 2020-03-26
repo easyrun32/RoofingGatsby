@@ -23,7 +23,7 @@ export const SubTextContainer = styled.div`
 
 export const CirclePictureContainer = styled.div`
   margin-top: 10vw;
-  margin-bottom: 10vw;
+  margin-bottom: 5vw;
 `;
 
 export const CircleContainer = styled.div`

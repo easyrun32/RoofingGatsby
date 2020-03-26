@@ -1,10 +1,7 @@
 import React from "react";
 import "./button.styles.scss";
+import { CustomButton } from "./button.styles";
 export const Button = props => {
-  return (
-    <button className="submit submit--green" type="submit" value="send">
-      {props.children}
-    </button>
-  );
+  return <CustomButton green>{props.children}</CustomButton>;
 };
 export default Button;

@@ -44,6 +44,10 @@ export const Grid1 = styled.div`
 export const LeftText = styled.div`
   grid-area: 6 / 1 / 7 / 2;
   text-align: left;
+  font-weight: 600;
+  ::first-letter {
+    text-transform: capitalize;
+  }
   img {
     width: 30px;
   }
@@ -68,11 +72,20 @@ export const RightText = styled.div`
     height: 20px;
   }
   @media screen and (min-width: 1400px) {
+    margin-top: 20px;
     img {
-      width: 20px;
-      height: 20px;
+      width: 25px;
+      height: 25px;
     }
   }
+  @media screen and (min-width: 1800px) {
+    margin-top: 40px;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
   text-align: left;
 `;
 export const MidText = styled.div`
@@ -81,7 +94,7 @@ export const MidText = styled.div`
     font-size: 5vw;
   }
   @media screen and (min-width: 1400px) {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 `;
 export const TopText = styled.div`
@@ -111,8 +124,8 @@ export const SliderUserIcon = styled.div`
   }
 
   @media screen and (min-width: 1400px) {
-    height: 200px;
-    width: 200px;
-    background-size: 200px 200px;
+    height: 150px;
+    width: 150px;
+    background-size: 150px 150px;
   }
 `;

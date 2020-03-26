@@ -18,7 +18,10 @@ export const Background = styled.div`
 
 export const CircleNumberContainer = styled.div`
   margin-top: 10vw;
-  margin-bottom: 10vw;
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: 10vh;
+  }
 `;
 export const CircleContainer = styled.div`
   display: flex;
@@ -65,7 +68,7 @@ export const TextTitle = styled.div`
 `;
 export const Container = styled.div`
   margin-top: 10vw;
-  margin-bottom: 10vw;
+  margin-bottom: 5vw;
   @media screen and (max-width: 500px) {
     margin-top: 20vw;
     margin-bottom: 20vw;
