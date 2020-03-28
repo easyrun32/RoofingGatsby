@@ -2,7 +2,7 @@ import styled from "styled-components";
 export const Background = styled.div`
   /* position: relative;
   width: 100%; */
-
+  padding: 100px;
   background-image: linear-gradient(
     -100deg,
     #bee9e48f 0%,
@@ -22,7 +22,7 @@ export const SubTextContainer = styled.div`
 `;
 
 export const CirclePictureContainer = styled.div`
-  margin-top: 10vw;
+  margin-top: 5vw;
   margin-bottom: 5vw;
 `;
 
@@ -41,8 +41,8 @@ export const CircleContainer = styled.div`
 `;
 
 export const Container = styled.div`
-  margin-top: 10vw;
-  margin-bottom: 10vw;
+  /* margin-top: 10vw; */
+  /* margin-bottom: 10vw; */
   @media screen and (max-width: 500px) {
     margin-top: 20vw;
     margin-bottom: 20vw;
@@ -52,9 +52,9 @@ export const Container = styled.div`
 export const TextTitle = styled.div`
   font-size: 3vw;
   font-weight: 600;
-  margin-top: 2vw;
+  /* margin-top: 2vw; */
   @media screen and (max-width: 500px) {
-    margin-top: 15vw;
+    /* margin-top: 15vw; */
     font-size: 8vw;
   }
 `;

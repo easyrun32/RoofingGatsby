@@ -8,7 +8,7 @@ export const Background = styled.div`
   /* height: 100vh; */
   background-image: linear-gradient(
     -100deg,
-    #bee9e48f 0%,
+    #5586808f 0%,
     rgba(242, 243, 242, 0.726) 100%
   );
   @media screen and (max-width: 500px) {
@@ -17,8 +17,8 @@ export const Background = styled.div`
 `;
 
 export const CircleNumberContainer = styled.div`
-  margin-top: 10vw;
-
+  /* margin-top: 10vw; */
+  padding: 2.5vw;
   @media screen and (max-width: 500px) {
     margin-bottom: 10vh;
   }
@@ -59,7 +59,7 @@ export const TextTitle = styled.div`
 
   font-weight: 600;
   font-size: 2.5vw;
-  margin-top: 5vw;
+
   @media screen and (max-width: 500px) {
     position: relative;
     font-size: 10vw;
@@ -67,8 +67,8 @@ export const TextTitle = styled.div`
   }
 `;
 export const Container = styled.div`
-  margin-top: 10vw;
-  margin-bottom: 5vw;
+  /* margin-top: 10vw;
+  margin-bottom: 5vw; */
   @media screen and (max-width: 500px) {
     margin-top: 20vw;
     margin-bottom: 20vw;

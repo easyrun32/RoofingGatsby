@@ -6,11 +6,11 @@ export const SliderBackground = styled.div`
   user-select: none;
   background-image: linear-gradient(
     -50deg,
-    #bee9e48f 0%,
+    #5586808f 0%,
     rgba(242, 243, 242, 0.726) 100%
   );
   @media screen and (max-width: 800px) {
-    height: 70vh;
+    height: 90vh;
   }
 `;
 

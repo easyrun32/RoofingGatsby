@@ -3,8 +3,15 @@ $card-height: 70vh;
 $card-width: 85vw;
 $card-height-mobile: 400px;
 
+$card-front-text-desktop-size: 3vw;
+$card-front-text-mobile-size: 8vw;
+$card-back-text-mobile-size: 5vw;
+$card-back-text-desktop-size: 1.8vw;
+
+$card-compress-desktop: 3vw;
+$card-compress-mobile: 5vw;
 .flip-card-text {
-  font-size: 1.5vw;
+  font-size: $card-back-text-desktop-size;
   font-weight: 600;
   color: black;
   padding-top: 15vh;
@@ -12,9 +19,10 @@ $card-height-mobile: 400px;
   padding-right: 50px;
   @media screen and (max-width: 800px) {
     padding-top: 10vh;
+    font-size: 3vw;
   }
   @media screen and (max-width: 500px) {
-    font-size: 4vw;
+    font-size: $card-back-text-mobile-size;
   }
 }
 
@@ -108,11 +116,10 @@ $card-height-mobile: 400px;
 }
 
 .flipcard-image-overlay {
-  position: relative;
   &__text {
     font-family: "Rubik", sans-serif;
     color: white;
-    font-size: 3vw;
+    font-size: $card-front-text-desktop-size;
     position: absolute;
     font-weight: 600;
     top: 50%;
@@ -120,21 +127,23 @@ $card-height-mobile: 400px;
     transform: translate(-50%, -50%);
     text-shadow: 1px 2px black;
     @media screen and (max-width: 800px) {
-      font-size: 6vw;
+      font-size: $card-front-text-mobile-size;
     }
   }
 }
 
 .flipcardgrid {
-  margin-left: 3vw;
-  margin-right: 3vw;
+  margin-left: $card-compress-desktop;
+  margin-right: $card-compress-desktop;
   display: grid;
   grid-template-columns: 3fr 2fr 1fr 2fr 1fr 2fr 3fr;
   grid-template-rows: 1fr;
-  grid-column-gap: 0px;
+  grid-column-gap: 10px;
   grid-row-gap: 0px;
   @media screen and (max-width: 800px) {
     display: inline;
+    margin-left: $card-compress-mobile;
+    margin-right: $card-compress-mobile;
   }
 }
 .flipcard1 {

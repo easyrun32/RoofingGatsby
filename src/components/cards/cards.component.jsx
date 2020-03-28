@@ -10,7 +10,6 @@ import Fade from "react-reveal/Fade";
 export const Cards = () => {
   return (
     <Background>
-      <br />
       <Fade bottom>
         <TextTitle>WHAT MATERIALS WE USE</TextTitle>
       </Fade>

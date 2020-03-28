@@ -33,18 +33,23 @@ export const PhotoSlider = () => {
   const users = [
     {
       backgroundIcon: woodbury,
-      review:
-        "lorem essssssslorem lorem essssssslorem essssssslorem essssssslorem esssssssloremlorem essssssslorem essessssssslorem essssssslorem esssssssloremlorem essssssslorem ess",
-      name: "bryan",
+      review: "Very professional and knowledgeable contractor",
+      name: "P.L",
       stars_amount: 5,
       socialmedia: gaf
     },
     {
       backgroundIcon: woodbury,
       review:
-        "lorem essssssslorem essssssslorem essssssslorem essssssslorem" +
-        "essssssslorem essssssslorem essssssslorem essssssslorem esssssss",
-      name: "bryan",
+        "are honest hard working professionals that gave a competitive estimate, arrived on the date scheduled and did a superior installation.The cleanup was so through! You wouldn't hardly notice that construction took place.",
+      name: "R.P",
+      stars_amount: 5,
+      socialmedia: gaf
+    },
+    {
+      backgroundIcon: woodbury,
+      review: "Work was performed in a professional manner",
+      name: "G.C",
       stars_amount: 5,
       socialmedia: gaf
     }

@@ -18,7 +18,6 @@ import React from "react";
 export const HomepageSection = () => {
   return (
     <Background>
-      <br />
       <TextTitle>THE FRANK STEVENS & SONS EXPERIENCE</TextTitle>
       <CircleContainer>
         <Fade bottom>
