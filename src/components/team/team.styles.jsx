@@ -18,7 +18,7 @@ export const Image = styled.div`
       border-radius: 10px;
 
       height: 60vh;
-      width: 75vw;
+      width: 50vw;
       display: block;
       margin-left: auto;
       margin-right: auto;

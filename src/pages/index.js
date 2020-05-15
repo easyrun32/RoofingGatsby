@@ -7,6 +7,7 @@ import { Questions } from "../components/homepage-common-question/questions.comp
 import { HomepageSection } from "../components/homepage-section/homepage-section.component";
 import { Team } from "../components/team/team.component";
 import { Cards } from "../components/cards/cards.component";
+import { Footer } from "../components/footer/footer.component";
 export default function Index() {
   return (
     <Layout>
@@ -17,7 +18,7 @@ export default function Index() {
       <Questions />
       <Cards />
       <Team />
-      <Questions />
+      <Footer />
     </Layout>
   );
 }
