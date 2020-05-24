@@ -1,6 +1,6 @@
 import React from "react";
 import "./paragraph1.styles.scss";
-import church from "../../images/aboutus/church.jpg";
+
 export const Paragraph1 = () => {
   return (
     <div className="paragraph1">
