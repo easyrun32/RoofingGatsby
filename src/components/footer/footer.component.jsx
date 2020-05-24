@@ -3,19 +3,26 @@ import React from "react";
 import "./footer.styles.scss";
 import phone from "../../images/footer/phone.png";
 import mail from "../../images/footer/mail.png";
+import credit1 from "../../images/credit/credit1.png";
+import credit2 from "../../images/credit/credit2.png";
+import credit3 from "../../images/credit/credit3.png";
 import { Link } from "gatsby";
+import Fade from "react-reveal/Fade";
 export const Footer = () => {
   return (
     <div className="footerbackground">
       <div className="footercontainer">
         <div className="footersection1">
-          <div className="footersection1__title">
-            Frank Steven and Sons Roofing
-          </div>
-          <div className="footersection1__aboutus">About us</div>
-          <div className="footersection1__aboutus__info">
-            We Provide Over 50 Years of Quality Roofing
-          </div>
+          <Fade bottom>
+            <div className="footersection1__title">
+              Frank Steven and Sons Roofing
+            </div>
+            <div className="footersection1__aboutus">About us</div>
+            <div className="footersection1__aboutus__info">
+              With over 50 years of experience we've been providing Orange
+              County with the best roof repair and roof replacement.
+            </div>
+          </Fade>
           <div className="footersection1__contact">Contact</div>
           <div className="footersection1__phone">
             <img
@@ -75,7 +82,14 @@ export const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="footersection4">Request A Bid!</div>
+        <div className="footersection4">
+          <Fade bottom>
+            <div className="footersection4__credit">Credibility</div>
+            <img src={credit1} alt="credit1" />
+            <img src={credit2} alt="credit2" />
+            <img src={credit3} alt="credit3" />
+          </Fade>
+        </div>
       </div>
     </div>
   );

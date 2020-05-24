@@ -130,9 +130,31 @@ $small-text: 1.3vw;
     }
   }
 }
+
 .footersection4 {
-  padding: 70px 0;
+  &__credit {
+    text-align: center;
+    font-size: $bold-text;
+
+    @media screen and (max-width: 800px) {
+      font-size: 8vw;
+    }
+  }
   @media screen and (max-width: 800px) {
     font-size: 10vw;
+  }
+  & > img {
+    display: flex;
+    padding: 10px;
+    width: 10vw;
+    @media screen and (max-width: 800px) {
+      border-radius: 10px;
+      padding: 20px;
+      height: 30vh;
+      width: 35vw;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
