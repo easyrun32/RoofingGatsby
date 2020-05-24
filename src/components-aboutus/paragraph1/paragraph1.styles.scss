@@ -16,7 +16,7 @@
 }
 .paragraph1-leftside {
   position: relative;
-  background-color: #ff9e2c;
+  // background-color: #ff9e2c;
   flex: 1;
   @media screen and (max-width: 800px) {
     flex: 3;
@@ -61,7 +61,7 @@
 .paragraph1-rightside {
   position: relative;
   text-align: center;
-  background-color: #b6701e;
+  // background-color: #b6701e;
   flex: 1;
   padding: 1rem;
   @media screen and (max-width: 800px) {
@@ -73,7 +73,7 @@
   background-size: cover;
   background-image: linear-gradient(
       rgba(226, 243, 220, 0.8) 0%,
-      rgba(206, 252, 249, 0.336) 50%
+      rgba(206, 252, 249, 0.336) 0%
     ),
     url(../../images/aboutus/church.jpg);
   border-radius: 5px;
