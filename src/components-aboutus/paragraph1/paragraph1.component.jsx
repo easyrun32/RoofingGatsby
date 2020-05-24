@@ -6,6 +6,7 @@ export const Paragraph1 = () => {
     <div className="paragraph1">
       <div className="paragraph1-leftside">
         <div className="paragraph1-text">
+          <div className="paragraph1-text__title">Where it began</div>
           Frank Stevens began roofing in Central Valley, New York in 1960 at the
           age of 18 for Jones Brothers, a roofing and plumbing company started
           in the late 1800s. In 1973, he opened Frank Stevens Roofing and went
@@ -15,7 +16,7 @@ export const Paragraph1 = () => {
           and residential roofing systems on low-slope and steep slope roofs,
           including built-up hot tar systems, single-ply membranes (EPDM Rubber,
           TPO & PVC), asphalt shingles, real and imitation slate, cedar shake
-          shingles and metal roofing (standing seam panel and metal shingles).
+          shingles and metal roofing (standing seam panel and metal shingles)
         </div>
       </div>
       <div className="paragraph1-rightside">
