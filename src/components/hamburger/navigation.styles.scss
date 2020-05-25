@@ -1,0 +1,175 @@
+.navigation {
+  @media screen and (min-width: 800px) {
+    display: none;
+  }
+
+  position: fixed;
+  z-index: 2000;
+  top: 1rem;
+  right: 5rem;
+
+  &__toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+    opacity: 0;
+  }
+
+  &__hamburger {
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    background-color: rgba(232, 247, 240, 0.938);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__hamburger > div {
+    position: relative;
+    width: 55%;
+    height: 0.1rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // avoid flicking  aka the x animation
+    transition: all 0.4s ease;
+  }
+
+  &__hamburger > div:before,
+  &__hamburger > div:after {
+    content: "";
+    position: absolute;
+    z-index: 2000;
+    top: -0.5rem;
+    width: 100%;
+    height: 1.5px;
+    background-color: inherit;
+  }
+
+  &__hamburger > div:after {
+    top: 0.5rem;
+  }
+
+  &__toggler:checked + &__hamburger > div {
+    transform: rotate(135deg);
+  }
+
+  //turn lines into x
+  &__toggler:checked + &__hamburger > div:before,
+  &__toggler:checked + &__hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  // rotate on hover when checked
+  &__toggler:checked:hover + &__hamburger > div {
+    transform: rotate(225deg);
+  }
+
+  &__toggler:checked ~ &__menu {
+    visibility: visible;
+  }
+
+  &__toggler:checked ~ &__menu > div {
+    transform: scale(2);
+    transition-duration: var(--menu-speed);
+  }
+
+  &__toggler:checked ~ &__menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    visibility: hidden;
+  }
+
+  &__menu > div {
+    //background: var(--overlay-color);
+
+    background-image: radial-gradient(#178f67e5, rgb(11, 189, 159));
+    border-radius: 20%;
+    width: 100%;
+    // was 100vh
+    height: 100vh;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+    position: absolute;
+  }
+  &__spaner {
+    margin-right: 0.5rem;
+    display: inline-block;
+  }
+  &__menu > div > div {
+    max-width: 100%;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  &__menu > div > div > ul {
+    margin-left: -13vw;
+    // max-width: 100%;
+    // max-height: 100vh;
+    // opacity: 0;
+    // transition: opacity 0.4s ease;
+  }
+  &__menu > div > div > ul > li {
+    list-style: none;
+    color: white;
+    font-size: 3vw;
+
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 0.2vh;
+    padding-bottom: 2.5vh;
+  }
+
+  &__menu > div > div > ul > li > a {
+    font-family: "Lato", sans-serif;
+    color: inherit;
+    text-decoration: none;
+    padding: 0.5rem;
+
+    transition: color 0.4s ease;
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      white 50%
+    );
+    background-size: 220%;
+    transition: all 0.4s;
+
+    &:hover,
+    &:active {
+      background-position: 100%;
+      color: rgb(11, 189, 159);
+      transform: translateX(1rem);
+    }
+  }
+}
