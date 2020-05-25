@@ -90,11 +90,14 @@ export const RightText = styled.div`
 `;
 export const MidText = styled.div`
   grid-area: 3 / 1 / 4 / 6;
-  @media screen and (max-width: 500px) {
-    font-size: 5vw;
-  }
   @media screen and (min-width: 1400px) {
     font-size: 2vw;
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 2.5vw;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 4vw;
   }
 `;
 export const TopText = styled.div`
@@ -107,7 +110,7 @@ export const TopText = styled.div`
 `;
 export const SliderUserIcon = styled.div`
   position: relative;
-  background: ${props => `url(${props.background}) no-repeat top center`};
+  background: ${(props) => `url(${props.background}) no-repeat top center`};
   background-size: 100px 100px;
   object-fit: contain;
   border: 1px solid white;
