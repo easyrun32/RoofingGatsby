@@ -5,7 +5,7 @@ import { ContactForm } from "../components/contact/contact.component";
 export default function Contact() {
   return (
     <Layout>
-      <ContactForm />
+      <ContactForm title="Ask Us Any Questions!" />
     </Layout>
   );
 }

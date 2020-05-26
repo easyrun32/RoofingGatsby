@@ -1,7 +1,7 @@
-.pvc {
+.hottar {
   background-image: linear-gradient(
     -100deg,
-    rgba(85, 134, 128, 0.56) 0%,
+    rgba(190, 233, 228, 0.56) 0%,
     rgba(242, 243, 242, 0.725) 100%
   );
   // background-color: blue;
@@ -33,7 +33,6 @@
       width: 25vw;
       margin-top: 3vw;
       @media screen and (max-width: 800px) {
-        text-align: center;
         width: 90vw;
         margin-top: 5vw;
       }
@@ -52,11 +51,11 @@
         height: 50vh;
         width: 80vw;
       }
-      background-position: center;
+      background-position: top;
       background-size: cover;
       border-radius: 5px;
       box-shadow: 7px 7px 5px rgb(100, 100, 100);
-      background-image: url(../../images/flatroof/pvc.jpg);
+      background-image: url(../../images/flatroof/hottar.png);
       height: 50vh;
       width: 25vw;
       margin: 0;
@@ -78,7 +77,6 @@
       & > ul > li {
         margin-bottom: 20px;
       }
-
       @media screen and (max-width: 800px) {
         width: 90.5vw;
       }

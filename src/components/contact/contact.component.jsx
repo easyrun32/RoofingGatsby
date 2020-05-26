@@ -6,17 +6,17 @@ import "./contact.styles.scss";
 import { Button } from "../../components/button/button.component";
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
     .join("&");
 }
-export const ContactForm = () => {
+export const ContactForm = (props) => {
   const [state, setState] = React.useState({});
 
-  const handleChange = e => {
+  const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = e => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
     fetch("/", {
@@ -24,20 +24,18 @@ export const ContactForm = () => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
         "form-name": form.getAttribute("name"),
-        ...state
-      })
+        ...state,
+      }),
     })
       .then(() => navigate(form.getAttribute("action")))
-      .catch(error => alert(error));
+      .catch((error) => alert(error));
   };
 
   return (
     <div className="contactcontainer">
       <div className="formcontainer">
         <br />
-        <div className="formtitle">
-          SUBMIT YOUR INFORMATION TO REQUEST A FREE BID!
-        </div>
+        <div className="formtitle">{props.title}</div>
         <form
           name="contact_frank"
           method="post"

@@ -12,7 +12,7 @@ export default function Index() {
   return (
     <Layout>
       <KenBurns />
-      <ContactForm />
+      <ContactForm title="SUBMIT YOUR INFORMATION TO REQUEST A FREE BID!" />
       <PhotoSlider />
       <HomepageSection />
       <Questions />
