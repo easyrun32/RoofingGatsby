@@ -6,9 +6,9 @@
   );
   //   background-color: red;
   /* display: grid; */
-  height: 70vh;
+  height: 60vh;
   @media screen and (max-width: 800px) {
-    height: 115vh;
+    min-height: 130vh;
   }
   &__mobile {
     text-align: center;
@@ -16,7 +16,7 @@
     font-weight: 900;
     position: relative;
     left: 13%;
-    font-size: 8vw;
+    font-size: 35px;
     top: 2%;
     word-wrap: break-word;
     height: 10vh;
@@ -43,7 +43,7 @@
     @media screen and (max-width: 800px) {
       left: 5%;
       top: -10%;
-      font-size: 7.5vw;
+      font-size: 20px;
 
       width: 89vw;
       height: 20vh;
@@ -52,7 +52,7 @@
       margin-top: 1vh;
       @media screen and (max-width: 800px) {
         margin-top: 3vh;
-        font-size: 5vw;
+        font-size: 20px;
       }
       font-weight: 600;
       font-size: 2vw;

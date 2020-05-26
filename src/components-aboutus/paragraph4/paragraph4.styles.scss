@@ -5,19 +5,23 @@
     rgba(242, 243, 242, 0.725) 100%
   );
   /* display: grid; */
-  height: 70vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: row-reverse;
   @media screen and (max-width: 800px) {
-    height: 170vh;
+    min-height: 160vh;
     flex-direction: column;
     justify-content: center;
   }
 }
 .paragraph4-leftside {
+  // background-color: blue;
+  display: inline-block;
+  overflow: hidden;
   position: relative;
   // background-color: #ff9e2c;
   flex: 2;
+
   @media screen and (max-width: 800px) {
     flex: 3;
   }
@@ -25,16 +29,30 @@
 
 .paragraph4-text {
   font-size: 1.5vw;
+  word-break: break-all;
+
   @media screen and (max-width: 800px) {
-    font-size: 2.5vw;
+    // background-color: red;
+    width: 25vw;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 460px) {
+    // background-color: red;
+
+    font-size: 15px;
+  }
+  @media screen and (max-width: 360px) {
+    // background-color: red;
+
+    font-size: 12px;
   }
 
-  @media screen and (max-height: 600px) and (max-width: 700px) {
-    font-size: 3vw;
-  }
-  @media screen and (max-width: 400px) {
-    font-size: 4.3vw;
-  }
+  // @media screen and (max-height: 600px) and (max-width: 700px) {
+  //   font-size: 3vw;
+  // }
+  // @media screen and (max-width: 400px) {
+  //   font-size: 4.3vw;
+  // }
   &__title {
     font-size: 2vw;
     font-weight: 600;

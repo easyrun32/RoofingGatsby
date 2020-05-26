@@ -94,10 +94,10 @@ export const MidText = styled.div`
     font-size: 2vw;
   }
   @media screen and (max-width: 600px) {
-    font-size: 2.5vw;
+    font-size: 20px;
   }
   @media screen and (max-width: 500px) {
-    font-size: 4vw;
+    font-size: 20px;
   }
 `;
 export const TopText = styled.div`
