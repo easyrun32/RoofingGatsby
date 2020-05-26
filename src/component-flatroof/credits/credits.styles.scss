@@ -8,7 +8,7 @@
   /* display: grid; */
   height: 70vh;
   @media screen and (max-width: 800px) {
-    height: 150vh;
+    height: 115vh;
   }
   &__mobile {
     text-align: center;
@@ -42,7 +42,7 @@
     // color: red;
     @media screen and (max-width: 800px) {
       left: 5%;
-      top: 8%;
+      top: -10%;
       font-size: 7.5vw;
 
       width: 89vw;
@@ -79,7 +79,7 @@
     @media screen and (max-width: 800px) {
       left: 10%;
       width: 80vw;
-      top: 5%;
+      top: -2%;
       padding-left: 5vw;
       height: 90vh;
     }
