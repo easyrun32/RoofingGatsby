@@ -22,29 +22,32 @@
     // background-color: red;
     @media screen and (max-width: 800px) {
       flex: 0.1;
+      text-align: center;
     }
 
     &__text {
       word-break: break-all;
+      margin: auto;
+      width: 25vw;
+      margin-top: 3vw;
+      font-size: 20px;
+      @media screen and (max-width: 800px) {
+        display: inline-block;
+        text-align: center;
+        width: 90vw;
+        margin-top: 5vw;
+        font-size: 6vw;
+      }
+      @media screen and (max-width: 400px) {
+        // font-size: 4.5vw;
+        // text-align: center;
+      }
       &__title {
         margin-bottom: 1vw;
         font-weight: 600;
         // background-color: blueviolet;
       }
-      font-size: 20px;
 
-      margin: auto;
-      width: 25vw;
-      margin-top: 3vw;
-      @media screen and (max-width: 800px) {
-        text-align: center;
-        width: 90vw;
-        margin-top: 5vw;
-      }
-      @media screen and (max-width: 400px) {
-        text-align: center;
-        font-size: 18px;
-      }
       // background-color: blueviolet;
     }
   }
@@ -52,22 +55,28 @@
     position: relative;
     flex: 1;
     // background-color: yellow;
+
     @media screen and (max-width: 800px) {
       flex: 1;
     }
     @media screen and (max-width: 400px) {
-      flex: 5;
+      flex: 1;
     }
     &__img {
       @media screen and (max-width: 800px) {
-        height: 50vh;
-        width: 80vw;
+        display: inline-block;
+        height: 100%;
+        width: 90vw;
       }
-      background-position: top;
+      @media screen and (max-width: 450px) {
+        // min-height: 70vh;
+        // width: 95vw;
+      }
+      background-position: center;
       background-size: cover;
       border-radius: 5px;
       box-shadow: 7px 7px 5px rgb(100, 100, 100);
-      background-image: url(../../images/flatroof/hottar.png);
+      background-image: url(../../images/flatroof/pvc.jpg);
       height: 50vh;
       width: 25vw;
       margin: 0;
@@ -86,9 +95,12 @@
       flex: 0.1;
     }
     &__text {
+      display: inline-block;
+      text-align: center;
       & > ul > li {
         margin-bottom: 20px;
       }
+
       @media screen and (max-width: 800px) {
         width: 90.5vw;
       }
