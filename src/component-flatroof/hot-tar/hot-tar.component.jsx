@@ -24,7 +24,7 @@ export const HotTar = () => {
       <div className="hottar__section3">
         <div className="hottar__section3__text">
           <Fade bottom>
-            <div className="hottar__section1__text__title">HOT TAR</div>
+            <div className="hottar__section3__text__title">HOT TAR</div>
             <ul>
               <li>
                 Hot Applied (Hot Tar) Built-Up Roof Systems (BUR):

@@ -26,7 +26,7 @@ export const PVC = () => {
       <div className="pvc__section3">
         <div className="pvc__section3__text">
           <Fade bottom>
-            <div className="pvc__section1__text__title">PVC ROOFING</div>
+            <div className="pvc__section3__text__title">PVC ROOFING</div>
             <ul>
               <li>
                 EPDM Rubber Roof Membrane Systems: (Fully-adhered |

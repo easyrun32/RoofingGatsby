@@ -1,5 +1,6 @@
 import styled from "styled-components";
 export const SliderSquare = styled.div`
+  /* background-color: red; */
   position: relative;
   /* border: solid 0.5px #555;*/
   margin: auto;
@@ -15,11 +16,8 @@ export const SliderSquare = styled.div`
   -webkit-border-radius: 25px;
   width: 60vw;
   padding: 20px;
-  height: 50vh;
-  @media screen and (max-width: 800px) {
-    height: 40vh;
-    width: 90vw;
-  }
+  /* height: 50vh; */
+
   font-size: 23px;
 
   background-image: linear-gradient(
@@ -29,17 +27,20 @@ export const SliderSquare = styled.div`
   );
 
   display: grid;
+  /* grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr); */
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 0.1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-`;
-export const Grid1 = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  @media screen and (max-width: 800px) {
+    height: unset;
+    /* height: 40vh; */
+    /*15vw */
+    /* grid-template-columns: repeat(5, auto); */
+    grid-template-rows: repeat(6, 0.1fr);
+    width: 90vw;
+  }
 `;
 export const LeftText = styled.div`
   grid-area: 6 / 1 / 7 / 2;
@@ -90,6 +91,7 @@ export const RightText = styled.div`
 `;
 export const MidText = styled.div`
   grid-area: 3 / 1 / 4 / 6;
+  /* background-color: yellow; */
   @media screen and (min-width: 1400px) {
     font-size: 2vw;
   }

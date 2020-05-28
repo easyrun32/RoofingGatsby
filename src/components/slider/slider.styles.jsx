@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SliderBackground = styled.div`
-  height: 80vh;
+  /* height: 80vh; */
   -webkit-user-select: none;
   user-select: none;
   background-image: linear-gradient(
@@ -10,7 +10,8 @@ export const SliderBackground = styled.div`
     rgba(242, 243, 242, 0.726) 100%
   );
   @media screen and (max-width: 800px) {
-    height: 90vh;
+    /* height: 90vh; */
+    height: unset;
   }
 `;
 
@@ -35,7 +36,11 @@ export const SliderTitle = styled.div`
 `;
 
 export const SliderContainer = styled.div`
-  height: 70vh;
+  padding-bottom: 30px;
+  @media screen and (max-width: 800px) {
+    height: unset;
+  }
+  /* height: 70vh; */
 
   -webkit-user-select: none;
   user-select: none;

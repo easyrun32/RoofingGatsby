@@ -22,7 +22,7 @@ export const Restore = () => {
       <div className="restore__section3">
         <div className="restore__section3__text">
           <Fade bottom>
-            <div className="restore__section1__text__title">WATER PROOFING</div>
+            <div className="restore__section3__text__title">WATER PROOFING</div>
             <ul>
               <li>Metal Retro-fit Roof Systems</li>
               <li>Fluid-Applied Roof Systems: Acrylic </li>

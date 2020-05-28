@@ -36,11 +36,17 @@
         text-align: center;
         width: 90vw;
         margin-top: 5vw;
-        font-size: 6vw;
+        font-size: 3vw;
       }
-      @media screen and (max-width: 400px) {
-        // font-size: 4.5vw;
-        // text-align: center;
+      @media screen and (max-width: 700px) {
+        display: inline-block;
+        text-align: center;
+        width: 90vw;
+        margin-top: 5vw;
+        font-size: 4vw;
+      }
+      @media screen and (max-width: 500px) {
+        font-size: 24px;
       }
       &__title {
         margin-bottom: 1vw;
@@ -57,7 +63,7 @@
     // background-color: yellow;
 
     @media screen and (max-width: 800px) {
-      flex: 1;
+      flex: 5;
     }
     @media screen and (max-width: 400px) {
       flex: 1;
@@ -65,7 +71,7 @@
     &__img {
       @media screen and (max-width: 800px) {
         display: inline-block;
-        height: 100%;
+        height: 90%;
         width: 90vw;
       }
       @media screen and (max-width: 450px) {
@@ -76,7 +82,7 @@
       background-size: cover;
       border-radius: 5px;
       box-shadow: 7px 7px 5px rgb(100, 100, 100);
-      background-image: url(../../images/flatroof/hottar.png);
+      background-image: url(../../images/flatroof/pvc.jpg);
       height: 50vh;
       width: 25vw;
       margin: 0;
@@ -91,21 +97,30 @@
     position: relative;
     flex: 1.3;
     // background-color: green;
+
     @media screen and (max-width: 800px) {
       flex: 0.1;
     }
     &__text {
+      // background-color: cyan;
       display: inline-block;
-      text-align: center;
+
       & > ul > li {
         margin-bottom: 20px;
       }
 
       @media screen and (max-width: 800px) {
-        width: 90.5vw;
+        flex: 0.1;
+
+        display: block;
+        margin: auto;
+        width: 100%;
       }
       word-break: break-all;
       &__title {
+        @media screen and (max-width: 800px) {
+          text-align: center;
+        }
         font-weight: 600;
       }
       font-size: 20px;
