@@ -1,0 +1,73 @@
+.steeproof-background {
+  position: relative;
+
+  width: 100%;
+  //   background-position: center;
+
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(156, 153, 153, 0.301) 0%,
+      rgba(86, 148, 144, 0.171) 0%
+    ),
+    url(../../images/steeproof/shingle.jpg);
+  background-position: 90% 30%;
+  @media screen and (max-width: 800px) {
+    background-image: linear-gradient(
+        rgba(156, 153, 153, 0.301) 0%,
+        rgba(86, 148, 144, 0.171) 0%
+      ),
+      url(../../images/steeproof/top-shingles.png);
+  }
+
+  //   overflow: visible;
+  //   text-overflow: ellipsis;
+  //   overflow-block: visible;
+
+  &__container {
+    display: inline-block;
+    padding: 1vw;
+    width: 100%;
+    @media screen and (max-width: 800px) {
+      padding: 2vw;
+    }
+  }
+  &__img-container {
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    // background-color: silver;
+    &__img {
+      border-radius: 10%;
+      margin-right: 1vw;
+      background-position: center;
+      background-size: cover;
+      //   background-size: contain;
+      //   background-repeat: no-repeat;
+      background-image: url(../../images/steeproof/masterelite.png);
+      float: right;
+      // 60 h
+      // 80 w
+      height: 150px;
+      width: 200px;
+      //   background-color: teal;
+    }
+  }
+  &__text {
+    &__title {
+      padding-bottom: 1vw;
+      font-weight: 600;
+      font-size: 40px;
+    }
+
+    padding-bottom: 3vw;
+    width: 80%;
+    margin: auto;
+    // background-color: red;
+    color: white;
+    font-size: 26px;
+    text-align: left;
+    @media screen and (max-width: 800px) {
+      font-size: 28px;
+    }
+  }
+}
