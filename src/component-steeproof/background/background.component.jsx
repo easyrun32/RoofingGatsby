@@ -5,15 +5,9 @@ export const Background = () => {
     <div className="steeproof-background">
       <div className="steeproof-background__container">
         <div className="steeproof-background__text">
-          <div className="steeproof-background__text__title">Testing</div>
+          <div className="steeproof-background__text__title">Steep Roof</div>
           We are experienced installers of cedar shakes , slate , metal roofing
-          and more! we have earned the distinction of being certified as one of
-          the select few GAF MasterElite Roofing Contractors for the
-          installation of asphalt shingles.
-        </div>
-
-        <div className="steeproof-background__img-container">
-          <div className="steeproof-background__img-container__img"></div>
+          and more!
         </div>
       </div>
     </div>

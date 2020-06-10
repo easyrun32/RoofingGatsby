@@ -25,38 +25,43 @@
 
   &__container {
     display: inline-block;
-    padding: 1vw;
+    padding-top: 6vw;
+    padding-bottom: 3vw;
     width: 100%;
     @media screen and (max-width: 800px) {
-      padding: 2vw;
+      padding-top: 13vw;
+      padding-bottom: 18vw;
     }
   }
-  &__img-container {
-    margin: auto;
-    width: 80%;
-    height: 100px;
-    // background-color: silver;
-    &__img {
-      border-radius: 10%;
-      margin-right: 1vw;
-      background-position: center;
-      background-size: cover;
-      //   background-size: contain;
-      //   background-repeat: no-repeat;
-      background-image: url(../../images/steeproof/masterelite.png);
-      float: right;
-      // 60 h
-      // 80 w
-      height: 150px;
-      width: 200px;
-      //   background-color: teal;
-    }
-  }
+  // &__img-container {
+  //   margin: auto;
+  //   width: 80%;
+  //   height: 100px;
+  //   // background-color: silver;
+  //   &__img {
+  //     border-radius: 10%;
+  //     margin-right: 1vw;
+  //     background-position: center;
+  //     background-size: cover;
+  //     //   background-size: contain;
+  //     //   background-repeat: no-repeat;
+  //     background-image: url(../../images/steeproof/masterelite.png);
+  //     float: right;
+  //     // 60 h
+  //     // 80 w
+  //     height: 150px;
+  //     width: 200px;
+  //     //   background-color: teal;
+  //   }
+  // }
   &__text {
     &__title {
       padding-bottom: 1vw;
       font-weight: 600;
       font-size: 40px;
+      @media screen and (max-width: 800px) {
+        font-size: 50px;
+      }
     }
 
     padding-bottom: 3vw;
