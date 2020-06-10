@@ -14,7 +14,12 @@
 
   &__container {
     display: flex;
+
     text-align: center;
+
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
   }
   &__lefthalf {
     font-size: 20px;
@@ -29,6 +34,10 @@
   }
   &__righthalf {
     position: relative;
+    @media screen and (max-width: 800px) {
+      margin-top: 10vw;
+      margin-bottom: 10vw;
+    }
     &__number {
       margin: 0;
       position: absolute;
@@ -38,6 +47,15 @@
       font-size: 60px;
       color: crimson;
       font-weight: 800;
+
+      @media screen and (max-width: 800px) {
+        text-align: center;
+        position: unset;
+        top: unset;
+        left: unset;
+        margin: unset;
+        transform: unset;
+      }
     }
     &__number > span {
       padding-right: 10px;
@@ -49,6 +67,9 @@
   &__circle-container {
     text-align: center;
     display: flex;
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
     &__left {
       flex: 1;
       // background-color: #cf8e43;
@@ -65,15 +86,18 @@
   &__circle-container-reverse {
     text-align: center;
     display: flex;
+    flex-direction: row-reverse;
+    @media screen and (max-width: 800px) {
+      display: block;
+    }
     &__left {
-      font-size: 20px;
-      padding: 2.5vw;
       flex: 1;
       // background-color: #cf8e43;
     }
     &__right {
       flex: 1;
-
+      font-size: 20px;
+      padding: 2.5vw;
       // background-color: #ff9e2c;
     }
   }
@@ -87,6 +111,10 @@
 .children {
   // background-color: blue;
   width: 100%;
+  @media screen and (max-width: 800px) {
+    width: 50%;
+    margin: auto;
+  }
   // padding-right: 30px;
 
   &__divtext {

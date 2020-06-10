@@ -6,6 +6,7 @@ import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 import systemimg from "../../images/steeproof/system.png";
 import gold from "../../images/steeproof/gold.png";
+
 export const Loader = () => {
   return (
     <div className="loader">
@@ -67,6 +68,14 @@ export const Loader = () => {
       </div>
       <div className="loader__circle-container-reverse">
         <div className="loader__circle-container-reverse__left">
+          <CircleAnimation
+            img={gold}
+            width={50}
+            margin={10}
+            color={`rgba(218,165,32`}
+          />
+        </div>
+        <div className="loader__circle-container-reverse__right">
           100% Coverage for the first 50 years on material and the cost of labor
           to replace any defective material; Prorated coverage from years 51 and
           beyond at 20% 100% Coverage for the first 25 years on workmanship on
@@ -78,14 +87,6 @@ export const Loader = () => {
           Buildings other than single family residences have full coverage for
           the first 40 years, prorated at 20% from year 41 on, and 100% coverage
           for the first 20 years on all Workmanship
-        </div>
-        <div className="loader__circle-container-reverse__right">
-          <CircleAnimation
-            img={gold}
-            width={50}
-            margin={10}
-            color={`rgba(218,165,32`}
-          />
         </div>
       </div>
     </div>
