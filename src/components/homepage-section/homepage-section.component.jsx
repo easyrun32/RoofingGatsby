@@ -5,14 +5,15 @@ import {
   TextTitle,
   CircleContainer,
   CirclePictureContainer,
-  SubTextContainer
+  SubTextContainer,
 } from "./homepage-section.styles";
-import { Button } from "../button/button.component";
+
 import Fade from "react-reveal/Fade";
 import schedule from "../../images/circle-images/schedule.png";
 import roofcolors from "../../images/circle-images/roofcolors.jpg";
 import roofer from "../../images/circle-images/roofer.jpg";
 import React from "react";
+import { NavigateButton } from "../../components/button/NavigateButton.component";
 // https://www.react-reveal.com/examples/
 
 export const HomepageSection = () => {
@@ -44,7 +45,7 @@ export const HomepageSection = () => {
           </CirclePictureContainer>
         </Fade>
       </CircleContainer>
-      <Button>Learn More</Button>
+      <NavigateButton route="steep-roof">Learn More</NavigateButton>
     </Background>
   );
 };

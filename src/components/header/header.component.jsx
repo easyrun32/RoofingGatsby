@@ -7,7 +7,7 @@ export const Header = () => {
       <CustomButton route={"about-us"} name={"who we are"} />
       <CustomButton route={"flat-roof"} name={"flat roofs"} />
       <CustomButton route={"steep-roof"} name={"steep roofs"} />
-      <CustomButton route={"education"} name={"education center"} />
+      <CustomButton route={"portfolio"} name={"Portfolio"} />
       <CustomButton route={"contact"} name={" contact us"} />
     </div>
   );

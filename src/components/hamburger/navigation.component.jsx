@@ -34,8 +34,8 @@ export const Navigation = () => {
                 </a>
               </li>
               <li>
-                <a href="/education">
-                  <span className="navigation__spaner">04</span>Education
+                <a href="/portfolio">
+                  <span className="navigation__spaner">04</span>Portfolio
                 </a>
               </li>
               <li>

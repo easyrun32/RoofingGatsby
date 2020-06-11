@@ -81,7 +81,7 @@ $color-grey-dark: #777;
 }
 
 .contactcontainer {
-  height: 50vh;
+  min-height: 70vh;
   background-size: cover;
   /*transparent 50% */
   background-image: linear-gradient(
@@ -91,7 +91,7 @@ $color-grey-dark: #777;
     url(../../images/backgroundimage/ontheroof.jpg);
 
   @media screen and (max-width: 800px) {
-    height: 550px;
+    height: 100vh;
 
     background-image: linear-gradient(
         rgba(226, 243, 220, 0.8) 0%,
