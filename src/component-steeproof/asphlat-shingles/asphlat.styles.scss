@@ -1,0 +1,41 @@
+.asphlat {
+  background-image: linear-gradient(
+    -100deg,
+    rgba(85, 134, 128, 0.56) 0%,
+    rgba(242, 243, 242, 0.725) 100%
+  );
+  &__title {
+    padding: 1vw;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  &__container {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-auto-rows: 120px;
+    grid-auto-flow: dense;
+    padding: 1vw;
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      box-shadow: 0 2px 16px var(--shadow);
+    }
+
+    &__vertical {
+      background-color: red;
+      grid-row: span 2;
+    }
+    &__horizontal {
+      grid-column: span 2;
+    }
+
+    &__big {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
+}
