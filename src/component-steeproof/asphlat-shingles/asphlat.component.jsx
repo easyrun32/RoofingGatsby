@@ -12,7 +12,11 @@ import Fade from "react-reveal";
 export const Asphlat = () => {
   return (
     <div className="asphlat">
-      <div className="asphlat__title">Asphlat Shingle Gallery</div>
+      <div className="asphlat__title">Asphlat Shingle </div>
+      <div className="asphlat__description">
+        One of the most common roofing material used in NY Homes. It's cost
+        effective, lays flat on the roof and it's easy to install!
+      </div>
       <div className="asphlat__container">
         <Fade bottom>
           <div>
