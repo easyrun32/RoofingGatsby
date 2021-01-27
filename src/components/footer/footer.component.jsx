@@ -30,7 +30,7 @@ export const Footer = () => {
               src={phone}
               alt="phone"
             />
-            <a href="tel:8459999999">845-999-9999</a>
+            <a href="tel:18459282161">1-845-928-2161</a>
           </div>
           <div className="footersection1__phone">
             <img
@@ -38,7 +38,7 @@ export const Footer = () => {
               src={mail}
               alt="phone"
             />
-            <a href="mailto:someemail@gmail.com">test@gmail.com</a>
+            <a href="mailto:fstevensroofing@optonline.net ">email</a>
           </div>
         </div>
         <div className="footersection2">
